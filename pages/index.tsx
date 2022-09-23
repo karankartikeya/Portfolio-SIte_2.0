@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       {/* Header */}
         <Header/>
 
-      {/* Header */}
+      {/* Hero */}
 
       {/* Header */}
 
