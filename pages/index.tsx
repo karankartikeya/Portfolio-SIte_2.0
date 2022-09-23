@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '../components/Header'
 
 
 const Home: NextPage = () => {
@@ -10,7 +11,20 @@ const Home: NextPage = () => {
         <title>Create Next App</title>
       </Head>
 
-      <h1 className = 'text-red-500'>hello </h1>
+      {/* Header */}
+        <Header/>
+
+      {/* Hero */}
+
+      {/* Header */}
+
+      {/* Header */}
+
+      {/* Header */}
+
+      {/* Skills */}
+
+      {/* Contact Us */}
     </div>
   )
 }
