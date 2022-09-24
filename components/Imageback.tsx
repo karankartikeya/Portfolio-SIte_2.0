@@ -11,7 +11,7 @@ export default function Imagedata({}: Props) {
     
   return (
     <Image
-    className='relative rounded-full h-32 w-32 mx-auto'
+    className='relative rounded-full h-32 w-32 mx-auto object-cover'
         loader={myLoader}
         src=" "
         alt = "picture of hero"
