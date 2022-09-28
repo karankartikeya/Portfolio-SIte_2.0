@@ -2,10 +2,14 @@ import { MotionConfig } from 'framer-motion'
 import React from 'react'
 import Imagedata from './Imagedata'
 import {motion} from 'framer-motion'
+import { PageInfo } from '../typing'
+import { urlFor } from '../sanity'
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo;
+}
 
-export default function About({}: Props) {
+export default function About({pageInfo}: Props) {
   return (
     <motion.div 
     initial={{opacity:0}}
@@ -25,7 +29,7 @@ export default function About({}: Props) {
             }}
             whileInView = {{opacity:1 ,x: 0}}
  
-            src='https://karankartikeya.netlify.app/images/kk7.jpg'
+            src={urlFor(pageInfo?.heroImage).url()}
             className='-mb-20 md:mb-0flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] '
         />
 

@@ -4,16 +4,19 @@ import BackgroundCircles from './BackgroundCircles';
 import image from 'next/image';
 import Imagedata from './Imagedata';
 import Link from 'next/link';
+import { PageInfo } from '../typing';
 
 
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo
+}
 
-export default function Hero({}: Props) {
+export default function Hero({pageInfo}: Props) {
 
     const [text, count] = useTypewriter({
         words:[
-            "Hey there!!, My Name is Karan Kartikeya", 
+            `Hey there!!, My Name is ${pageInfo.name}`, 
             "Designer", 
             "Creator"
         ],

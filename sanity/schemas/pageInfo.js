@@ -24,7 +24,7 @@ export default {
       },
     },
     {
-      name:"backgoundInfo",
+      name:"backgroundInfo",
       title:"BackgroundInformation",
       type:"string",
     },

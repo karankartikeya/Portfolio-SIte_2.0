@@ -9,11 +9,11 @@ const query = groq`
       ...,
       technologies[]->
     }
-`
+`;
 
 type Data = {
     projects: Project[];
-}
+};
 
 export default async function handler(
     req: NextApiRequest,

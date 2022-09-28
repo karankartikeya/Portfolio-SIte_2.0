@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import ExperienceCard from './ExperienceCard'
 type Props = {}
 
-export default function Experience({}: Props) {
+export default function WorkExperience({}: Props) {
   return (
     <motion.div 
     initial={{opacity:0}}
