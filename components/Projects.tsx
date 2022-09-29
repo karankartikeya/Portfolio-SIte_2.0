@@ -22,7 +22,7 @@ function Projects({}: Props) {
                 transition={{duration:1.2}}
                 whileInView={{opacity:1,
                 y:0}}
-                src='https://karankartikeya.netlify.app/images/kk7.jpg' alt=''/>
+                src='https://cdn.umso.co/defaults/v2/app.svg' alt=''/>
 
                 <motion.div 
                 initial={{opacity:0,
