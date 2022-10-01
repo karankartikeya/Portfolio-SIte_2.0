@@ -1,11 +1,14 @@
 import { MotionConfig } from 'framer-motion'
 import React from 'react'
 import {motion} from 'framer-motion'
+import { Skill } from '../typing';
+import { urlFor } from '../sanity';
 type Props = {
     directionLeft?: boolean;
+    skill: Skill
 };
 
-function Skill({directionLeft}: Props) {
+function Skill({directionLeft, skill}: Props) {
   return (
     <div className='group relative flex cursor-pointer'>
        <motion.img
@@ -15,7 +18,7 @@ function Skill({directionLeft}: Props) {
             }}
             transition={{duration:1}}
             whileInView={{opacity:1, x:0}}
-            src='https://karankartikeya.netlify.app/images/kk7.jpg'
+            src={urlFor(skill.image).url()}
             className='rounded-full object-cover border border-gray-500 h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
        />
        <div className='rounded-full absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 z-0'>
