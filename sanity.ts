@@ -1,5 +1,8 @@
 import {createClient} from 'next-sanity';
 import createImageBuilder from '@sanity/image-url';
+import * as dotenv from 'dotenv'
+
+dotenv.config()
 
 export const config = {
     dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
