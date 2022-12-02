@@ -1,6 +1,5 @@
 import { MotionConfig } from 'framer-motion'
 import React from 'react'
-import Imagedata from './Imagedata'
 import {motion} from 'framer-motion'
 import { PageInfo } from '../typing'
 import { urlFor } from '../sanity'
