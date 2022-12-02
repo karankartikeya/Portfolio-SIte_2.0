@@ -12,7 +12,7 @@ export default function Imagedata({}: Props) {
   return (
     <Image
         priority
-        className='relative rounded-full h-32 w-32 mx-auto object-cover'
+        className='relative mx-auto object-cover'
         loader={myLoader}
         src=" "
         alt = "picture of hero"

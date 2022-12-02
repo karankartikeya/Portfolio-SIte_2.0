@@ -22,6 +22,8 @@ export default function WorkExperience({ experience }: Props) {
             {experience.map((experience)=>(
                 <ExperienceCard key={experience._id} experience={experience}/>
             ))}
+
+           
         </div>
     </motion.div>
   )
